@@ -1,0 +1,95 @@
+@use 'reset';
+@use 'hero';
+$corFundo : #040714;
+$corTextoPrinipal : silver;
+$corTextoSeundario : #f9f9f9;
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assents/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Avenir;
+    src: url(../../assents/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+
+body{
+    background-color: $corFundo;
+    font-family: Avenir, sans-serif;
+}
+@mixin text($fontSize : 12px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corTextoPrinipal;
+}
+
+@mixin title($fontSize : 40px){
+    font-size: $fontSize;
+   
+    color: $corTextoSeundario;
+}
+.text--big{
+    @include text(18px);
+}
+.text{
+    @include text;
+}
+.text--small{
+    @include text(12px);
+}
+.title--big{
+    @include title (44px);
+}
+.title{
+    @include title;
+}
+.title--small{
+    @include title(20px);
+}
+.link-text{
+    @include text(15px);
+    color: $corTextoSeundario; text-decoration: underline;
+    
+}
+.hero_content{
+    transform: translate(-240px);
+}
+.h_c_b{
+    height: 100px;
+   
+}
+.bnt{
+    transform: translate(220px);
+    margin-top: 15px;
+}
+.bnt1{
+    transform: translate(20px);
+    margin-top: 15px;
+}
+
+#sp{
+    margin-left: 250px;
+}
+#sp1{
+    margin-left: -150px;
+}
+button{
+    display: block;
+    width: 210px;
+    height: 50px;
+    font-size: 18px;
+    color: $corTextoPrinipal;
+    background-color:#6421ff ;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+
+    
+}
+.img1{
+    transform: translate(-200px);
+}
