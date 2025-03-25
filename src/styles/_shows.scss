@@ -1,0 +1,45 @@
+@use'variaveis';
+
+
+
+.shows{
+    padding: 2vw 5.6vw;
+    
+  
+    
+    
+    &__list{
+        display: none;
+        gap: 24px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 44px;
+        &--is--ative{
+            display: grid;
+        }
+        &__item{
+            img{
+                max-width: 100%;
+                border-radius: 4px;
+
+            }
+        }
+    }
+    &__tabs{
+
+       &__button{
+        color : variaveis.$corTextoSeundario;
+        font-size: 12px;
+        border: none;
+        padding-bottom: 5px;
+        background: none;
+        text-transform: uppercase;
+        margin: 0 1vw; 
+        
+        &--is--ative{
+        border-bottom: 5px solid variaveis.$corTextoSeundario;
+        cursor: pointer;
+    }
+    }
+  
+}
+}

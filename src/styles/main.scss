@@ -1,16 +1,18 @@
 @use 'reset';
 @use 'hero';
+@use 'shows';
+@use 'variaveis';
 $corFundo : #040714;
 $corTextoPrinipal : silver;
 $corTextoSeundario : #f9f9f9;
 
 @font-face {
-    font-family: Avenir;
+    font-family: Avenir sans-serif;
     src: url(../../assents/fonts/Avenir-Regular.woff2);
     font-weight: 400;
 }
 @font-face {
-    font-family: Avenir;
+    font-family: Avenir sans-serif;
     src: url(../../assents/fonts/Avenir-Bold.woff2);
     font-weight: 700;
 }
@@ -57,10 +59,7 @@ body{
 .hero_content{
     transform: translate(-240px);
 }
-.h_c_b{
-    height: 100px;
-   
-}
+
 .bnt{
     transform: translate(220px);
     margin-top: 15px;
@@ -76,20 +75,18 @@ body{
 #sp1{
     margin-left: -150px;
 }
-button{
-    display: block;
-    width: 210px;
-    height: 50px;
-    font-size: 18px;
-    color: $corTextoPrinipal;
-    background-color:#6421ff ;
-    text-transform: uppercase;
-    border-radius: 4px;
-    margin-top: 2vw;
-    margin-bottom: 8px;
 
-    
-}
 .img1{
     transform: translate(-200px);
+}
+
+#bntShow{
+
+
+
+}
+#navBar{
+    display: flex;
+    justify-content: center;
+
 }
